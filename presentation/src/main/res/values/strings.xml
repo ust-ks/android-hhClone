@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- bottom navigation menu -->
+    <string name="nav_title_search">Поиск</string>
+    <string name="nav_title_favorite">Избранное</string>
+    <string name="nav_title_responses">Отклики</string>
+    <string name="nav_title_messages">Сообщения</string>
+    <string name="nav_title_profile">Профиль</string>
+
+    <string name="about_company">
+        Привет! Мы - аккредитованная IT-компания Effective Mobile. Сейчас мы находимся в поиске талантливых и амбициозных людей, которые хотят развиваться в сфере IT.
+
+Если ты начинающий Android-разработчик, который хочет решать сложные задачи и постоянно прокачивать свои навыки, то эта вакансия для тебя.
+    </string>
+    
+    <string name="tasks">
+        - Понимание Android (Activity, Fragment, Service, BroadcastReceiver, WorkManager, View под капотом);
+- Владение Kotlin (generics, лямбды, null safety);
+- Опыт работы с Coroutines или RxJava (достаточно одного из них);
+- Уверенное знание любого DI фреймворка (Dagger, Koin и т.д.);
+- Понимание принципов Clean Architecture;
+- Навыки работы с Git.
+    </string>
+</resources>
