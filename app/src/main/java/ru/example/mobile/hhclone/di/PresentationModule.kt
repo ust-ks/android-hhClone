@@ -8,6 +8,6 @@ import ru.example.mobile.presentation.viewModel.MainViewModel
 
 fun presentationModule() = module {
     viewModel { MainViewModel(get()) }
-    viewModel { LoginStep1ViewModel(get(), get()) }
+    viewModel { LoginStep1ViewModel(get()) }
     viewModel { LoginStep2ViewModel(get()) }
 }

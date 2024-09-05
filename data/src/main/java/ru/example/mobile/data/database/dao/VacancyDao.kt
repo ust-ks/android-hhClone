@@ -9,9 +9,9 @@ import ru.example.mobile.data.models.Vacancy
 interface VacancyDao : AbstractDao<Vacancy> {
 
     @Query("SELECT * FROM vacancies")
-    suspend fun getFlowAll() : Flow<List<Vacancy>?>
+    fun getFlowAll() : Flow<List<Vacancy>?>
 
     @Query("UPDATE vacancies SET isFavorite = :value WHERE id = :id")
-    suspend fun updateIsFavoriteById(id: String, value: Boolean)
+    fun updateIsFavoriteById(id: String, value: Boolean)
 
 }

@@ -8,20 +8,20 @@ import androidx.room.Update
 interface AbstractDao<T> {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(data: List<T>)
+    fun insert(data: List<T>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(data: T)
+    fun insert(data: T)
 
     @Update
-    suspend fun update(data: List<T>)
+    fun update(data: List<T>)
 
     @Update
-    suspend fun update(data: T)
+    fun update(data: T)
 
     @Delete
-    suspend fun delete(data: T)
+    fun delete(data: T)
 
     @Delete
-    suspend fun delete(data: List<T>)
+    fun delete(data: List<T>)
 }

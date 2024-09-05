@@ -9,6 +9,6 @@ import ru.example.mobile.data.models.Offer
 interface OfferDao : AbstractDao<Offer> {
 
     @Query("SELECT * FROM offers")
-    suspend fun getFlowAll() : Flow<List<Offer>?>
+    fun getFlowAll() : Flow<List<Offer>?>
 
 }

@@ -17,6 +17,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding.containerAuth.visibility = View.VISIBLE
         setupContainers()
         setupNavigationMenu()
     }

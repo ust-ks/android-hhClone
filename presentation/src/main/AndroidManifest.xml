@@ -8,12 +8,11 @@
         android:label="hhClone"
         android:allowBackup="true"
         tools:replace="android:allowBackup"
+        android:theme="@style/Theme.hhClone"
         android:supportsRtl="true"
         android:requestLegacyExternalStorage="true"
         android:enableOnBackInvokedCallback="true"
         tools:targetApi="tiramisu">
-
-        <!-- android:theme="@style/Theme.hhClone" -->
 
         <activity
             android:name=".view.MainActivity"

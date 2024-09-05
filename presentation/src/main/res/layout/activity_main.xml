@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    tools:ignore="HardcodedText">
 
 <!--    <androidx.viewpager2.widget.ViewPager2-->
 <!--        android:id="@+id/main_view_pager"-->
@@ -14,21 +18,24 @@
     <FrameLayout
         android:id="@+id/container_auth"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone" />
 
     <!-- Контейнер для фрагментов поиска -->
     <FrameLayout
         android:id="@+id/container_search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone" />
 
     <!-- Контейнер для фрагментов избранного -->
     <FrameLayout
         android:id="@+id/container_favorite"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -39,4 +46,4 @@
         android:background="@color/shadows"
         app:menu="@menu/bottom_nav_menu"/>
 
-</FrameLayout>
+</LinearLayout>
